@@ -1,0 +1,83 @@
+#quiz-container {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#question {
+    margin: 20px 0;
+}
+
+#choices {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Next Question button style */
+#next-btn {
+    margin-top: 10px;
+    padding: 10px;
+    width: 70%;
+    color: #fff;
+    background-color: #0171d3;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next-btn:hover {
+    background-color: #016dcb;
+}
+
+#score {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct-answer {
+    background-color: #27ae60 !important;
+}
+
+#popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#popup-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #quiz-container {
+        padding: 20px;
+    }
+}

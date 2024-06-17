@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Trivia </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/trivia.css">
+                        
+    </head>
+    <body>
+        <section class="container forms">
+			<div id="quiz-container">
+				<h1>Trivia Quiz</h1>
+				<div id="category-select">
+    			<label for="category">Select Category: </label>
+    			<select id="category" onchange="changeCategory()">
+        			<option>Select Category</option>
+        			<option value="18">Computer Science</option>
+        			<option value="9">General Knowledge</option>
+        			<!-- Add more categories as needed -->
+    			</select>
+				</div>
+				&nbsp;
+				<div id="score">Score: 0/10</div>
+				<div id="question"></div>
+				<div id="choices"></div>
+				<button id="next-btn" onclick="nextQuestion()">Next Question</button>
+				<div id="popup">
+    			<p id="popup-score"></p>
+    			<div id="popup-buttons">
+        		<button onclick="playAgain()">Play Again</button>
+        		<button onclick="closePopup()">Close</button>
+    		</div>
+        </section>
+
+        <!-- JavaScript -->
+        <script src="js/trivia.js"></script>
+    </body>
+</html>
